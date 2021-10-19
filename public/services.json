@@ -1,0 +1,39 @@
+[
+	{
+        "id": 1,
+        "title": "Lung Diseases",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/icon-1.png",
+        "description": "One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis."     
+    },
+    {
+        "id": 2,
+        "title": "Heart Diseases",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/icon-2.png",
+        "description": "One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis."     
+    },
+    {
+        "id": 3,
+        "title": "Orthopaedic",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/icon-3.png",
+        "description": "One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis."     
+    },
+    {
+        "id": 4,
+        "title": "General Surgery",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/Column-icon-4.png",
+        "description": "One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis."     
+    },
+    {
+        "id": 5,
+        "title": "Pharmacy",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/Column-icon5.png",
+        "description": "One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis."     
+    },
+    {
+        "id": 6,
+        "title": "Sports Injury",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/Column-icon6.png",
+        "description": "One of the key classifications is between traditio nal small molecule drugs; usually derived from chemical synthesis."     
+    }
+    
+]

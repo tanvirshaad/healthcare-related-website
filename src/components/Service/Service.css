@@ -1,0 +1,12 @@
+.fixed-size {
+    height: 50px;
+    width: 52px;
+    text-align: center;
+}
+.book-btn {
+    background-color: #74d9e2;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000173;
+    border: none;
+}

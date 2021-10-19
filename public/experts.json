@@ -1,0 +1,49 @@
+[
+	{
+        "id": 1,
+        "name": "Joshua Clark",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/02/p-1.1-400x400.jpg",
+        "speciality": "Anesthesiologist"     
+    },
+    {
+        "id": 2,
+        "name": "Steven Jacob",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/p-9-400x400.jpg",
+        "speciality": "Anesthesiologist"     
+    },
+    {
+        "id": 3,
+        "name": "Emma Bunton",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/p-8-400x400.jpg",
+        "speciality": "Allergist"     
+    },{
+        "id": 4,
+        "name": "Emily Haden",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/p-7-400x400.jpg",
+        "speciality": "Neurosurgeon"     
+    },
+    {
+        "id": 5,
+        "name": "Thomas Paul",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/p-6-400x400.jpg",
+        "speciality": "Allergist"     
+    },
+    {
+        "id": 6,
+        "name": "David James",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/p-5-400x400.jpg",
+        "speciality": "Anesthesiologist"     
+    },
+    {
+        "id": 7,
+        "name": "Zhala Conner",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/p-4-400x400.jpg",
+        "speciality": "Allergist"     
+    },
+    {
+        "id": 8,
+        "name": "Nicholas Pepe",
+        "img": "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/p-3-400x400.jpg",
+        "speciality": "Neurosurgeon"     
+    }
+]
