@@ -13,7 +13,8 @@ const Header = () => {
                         <div>
                             <Link to="/home">Home</Link>
                             <Link to="/experts">Experts</Link>
-                            <Link to="/pricing">Pricing</Link>
+                            <Link to="/about">About Us</Link>
+                            <Link to="/login">Login</Link>
                         </div>
                         <div>
                             <Navbar.Text className="ms-3">

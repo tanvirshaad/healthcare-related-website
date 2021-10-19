@@ -14,7 +14,7 @@ const Services = () => {
             <Container>
                 <Row>
                     <Col lg={12}>
-                        <h1 className="fw-bold fs-1 text-black">Servcies</h1>
+                        <h1 className="fw-bold fs-1 text-black">Services</h1>
                     </Col>
                 </Row>
                 <Row>
