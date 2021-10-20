@@ -18,7 +18,7 @@ function App() {
     const location = useLocation();
     const history = useHistory();
     // from where we are coming(location.state.from)
-    const redirect_uri = location.state?.from || '/shop';
+    const redirect_uri = location.state?.from || '/home';
     const handleGoogleLogin = () => {
         signInUsingGoogle().then((result) => {
             history.push(redirect_uri);
