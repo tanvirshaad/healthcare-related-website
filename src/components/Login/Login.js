@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 function App() {
@@ -10,8 +11,19 @@ function App() {
         handlePasswordChange,
         toggleLogin,
         error,
+
         signInUsingGoogle,
     } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    // from where we are coming(location.state.from)
+    const redirect_uri = location.state?.from || '/shop';
+    const handleGoogleLogin = () => {
+        signInUsingGoogle().then((result) => {
+            history.push(redirect_uri);
+        });
+    };
 
     return (
         <div className="mx-5 my-3 px-5">
@@ -106,13 +118,12 @@ function App() {
 
                         <button
                             type="button"
-                            onClick={signInUsingGoogle}
-                            className="btn btn-danger my-3 mx-2"
+                            onClick={handleGoogleLogin}
+                            className="btn btn-info my-3 mx-2"
                         >
                             Sign In With Google
                         </button>
                     </form>
-                    {/* <button onClick={handleGoogleSignin}>Google Sign In</button> */}
                 </div>
             </Container>
         </div>
@@ -120,13 +131,3 @@ function App() {
 }
 
 export default App;
-
-/*
-    password strength checker(regex)
-        (?=.*[A-Z].*[A-Z])        Ensure string has two uppercase letters.
-        (?=.*[!@#$&*])            Ensure string has one special case letter.
-        (?=.*[0-9].*[0-9])        Ensure string has two digits.
-        (?=.*[a-z].*[a-z].*[a-z]) Ensure string has three lowercase letters.
-        .{8}                      Ensure string is of length 8.
-        $                         End anchor.
-*/

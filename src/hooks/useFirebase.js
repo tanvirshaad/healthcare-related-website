@@ -1,5 +1,4 @@
 import initializeAuthentication from '../components/Firebase/firebase.init';
-import { useLocation, useHistory } from 'react-router-dom';
 
 import {
     getAuth,
@@ -8,7 +7,6 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     sendEmailVerification,
-    sendPasswordResetEmail,
     updateProfile,
     onAuthStateChanged,
     signOut,
@@ -25,17 +23,10 @@ const useFirebase = () => {
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
     const auth = getAuth();
-    // const location = useLocation();
-    // const history = useHistory();
-    // console.log(location?.state?.from);
-    // from where we are coming(location.state.from)
-    // const redirect_uri = location?.state?.from || '/home';
+
     const signInUsingGoogle = () => {
         const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider).then((result) => {
-            setUser(result.user);
-            // history.push(redirect_uri);
-        });
+        return signInWithPopup(auth, googleProvider);
     };
 
     // observe user state change
@@ -82,6 +73,7 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 const user = result.user;
+
                 setError('');
             })
             .catch((error) => {
@@ -121,11 +113,14 @@ const useFirebase = () => {
         user,
         handleRegistration,
         isLogin,
+        setError,
+        processLogin,
         handleNameChange,
         handleEmailChange,
         handlePasswordChange,
         toggleLogin,
         error,
+        signInWithPopup,
         signInUsingGoogle,
         logOut,
     };
