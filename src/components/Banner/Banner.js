@@ -7,13 +7,13 @@ const Banner = () => {
         <div className="banner">
             <Container>
                 <Row className="align-items-center">
-                    <Col lg={6}>
+                    <Col lg={6} sm={12}>
                         <h1 className="fw-bold text-white large-text">
                             Feel Better About Finding Health Care
                         </h1>
                         <h5>Find the care you need</h5>
                     </Col>
-                    <Col lg={6}>
+                    <Col lg={6} sm={12}>
                         <img
                             src="https://photos.healthgrades.com/homeimages/doctorsgroup1.webp"
                             alt=""

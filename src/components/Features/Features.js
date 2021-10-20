@@ -6,7 +6,7 @@ const Features = () => {
         <div className="py-5">
             <Container>
                 <Row>
-                    <Col lg={12}>
+                    <Col lg={12} sm={12}>
                         <h1 className="fw-bold fs-1 text-black">
                             Find the right care right at your fingertips
                         </h1>
@@ -17,7 +17,7 @@ const Features = () => {
                     </Col>
                 </Row>
                 <Row className="mt-5">
-                    <Col lg={4} className="d-flex justify-content-center">
+                    <Col lg={4} sm={12}>
                         <Card className="p-4 h-100" style={{ width: '18rem' }}>
                             <Card.Img
                                 variant="top"
@@ -32,7 +32,7 @@ const Features = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col lg={4}>
+                    <Col lg={4} sm={12}>
                         <Card className="p-4 h-100" style={{ width: '18rem' }}>
                             <Card.Img
                                 variant="top"
@@ -47,7 +47,7 @@ const Features = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col lg={4}>
+                    <Col lg={4} sm={12}>
                         <Card className="p-4 h-100" style={{ width: '18rem' }}>
                             <Card.Img
                                 variant="top"

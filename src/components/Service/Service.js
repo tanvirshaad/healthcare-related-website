@@ -6,7 +6,7 @@ import './Service.css';
 const Service = (props) => {
     const { id, title, img, description } = props.service;
     return (
-        <div className="col-lg-4 gy-3 d-flex justify-content-center">
+        <div className="col-lg-4 col-sm-12 gy-3 d-flex justify-content-center">
             <Card border="info" className="h-100" style={{ width: '18rem' }}>
                 <Card.Img
                     className="fixed-size text-center mx-auto my-3"

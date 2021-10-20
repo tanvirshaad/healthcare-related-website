@@ -26,9 +26,9 @@ function App() {
     };
 
     return (
-        <div className="mx-5 my-3 px-5">
+        <div className="mx-auto py-5 mt-3 my-3 px-5">
             <Container>
-                <div>
+                <div style={{ marginBottom: '100px' }}>
                     <form
                         style={{
                             margin: '0px 200px',

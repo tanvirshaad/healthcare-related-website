@@ -13,14 +13,14 @@ const About = () => {
                     </Col>
                 </Row>
                 <Row className="mt-5">
-                    <Col lg={6}>
+                    <Col lg={6} sm={12}>
                         <img
                             className="img-fluid"
                             src="https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/Qulity-team1.jpg"
                             alt=""
                         />
                     </Col>
-                    <Col lg={6} style={{ textAlign: 'left' }}>
+                    <Col lg={6} sm={12} style={{ textAlign: 'left' }}>
                         <h3 className="fw-medium" style={{ color: '#000173' }}>
                             Story about our hospital
                         </h3>
@@ -55,7 +55,7 @@ const About = () => {
                     </Col>
                 </Row>
                 <Row className="mt-5 py-3">
-                    <Col lg={6} md={12}>
+                    <Col lg={6} sm={12}>
                         <img
                             className="img-fluid"
                             src="https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/Qulity-Team2-600x642.png"
