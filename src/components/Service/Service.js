@@ -1,9 +1,10 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = (props) => {
-    const { title, img, description } = props.service;
+    const { id, title, img, description } = props.service;
     return (
         <div className="col-lg-4 gy-3 d-flex justify-content-center">
             <Card border="info" className="h-100" style={{ width: '18rem' }}>
@@ -16,7 +17,9 @@ const Service = (props) => {
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{description}</Card.Text>
-                    <Button className="book-btn">Book Now</Button>
+                    <Link to={`/booking/${id}`}>
+                        <Button className="book-btn">Book Now</Button>
+                    </Link>
                 </Card.Body>
             </Card>
         </div>

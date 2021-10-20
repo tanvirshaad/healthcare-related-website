@@ -7,6 +7,9 @@ import Experts from './components/Experts/Experts';
 import Login from './components/Login/Login';
 import About from './components/About/About';
 import AuthProvider from './contexts/AuthProvider';
+import Booking from './components/Booking/Booking';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
@@ -27,10 +30,16 @@ function App() {
                         <Route path="/login">
                             <Login></Login>
                         </Route>
+                        <PrivateRoute path="/booking/:serviceId">
+                            <Booking></Booking>
+                        </PrivateRoute>
                         <Route path="/about">
                             <About></About>
                         </Route>
                     </Switch>
+                    <Route>
+                        <Footer></Footer>
+                    </Route>
                 </Router>
             </AuthProvider>
         </div>

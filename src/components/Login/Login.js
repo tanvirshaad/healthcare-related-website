@@ -1,6 +1,5 @@
 import { Container } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
-import useFirebase from '../../hooks/useFirebase';
 
 function App() {
     const {
@@ -13,6 +12,7 @@ function App() {
         error,
         signInUsingGoogle,
     } = useAuth();
+
     return (
         <div className="mx-5 my-3 px-5">
             <Container>

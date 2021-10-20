@@ -1,4 +1,6 @@
 import initializeAuthentication from '../components/Firebase/firebase.init';
+import { useLocation, useHistory } from 'react-router-dom';
+
 import {
     getAuth,
     signInWithPopup,
@@ -23,12 +25,16 @@ const useFirebase = () => {
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
     const auth = getAuth();
+    // const location = useLocation();
+    // const history = useHistory();
+    // console.log(location?.state?.from);
+    // from where we are coming(location.state.from)
+    // const redirect_uri = location?.state?.from || '/home';
     const signInUsingGoogle = () => {
         const googleProvider = new GoogleAuthProvider();
-
         signInWithPopup(auth, googleProvider).then((result) => {
             setUser(result.user);
-            console.log(result.user);
+            // history.push(redirect_uri);
         });
     };
 
